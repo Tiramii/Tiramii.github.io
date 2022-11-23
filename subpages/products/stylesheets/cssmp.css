@@ -1,0 +1,1047 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+*{
+
+	padding: 0;
+	box-sizing: border-box	;
+	margin: 0;
+
+
+}
+
+header{
+
+	background-color: #a2c3a4;
+
+}
+
+li{
+
+	list-style: none;
+
+}
+
+a{
+
+	color: white;
+	text-decoration: none;
+
+}
+
+.navbar{
+
+	min-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 10px;
+	width: 100%;
+
+}
+
+.nav-menu{
+
+	display: flex;
+	justify-content: space-between ;
+	align-items: center;
+	gap: 5em;
+
+}
+
+.nav-branding{
+
+	width: 11em;
+	height: 3.5em;
+	margin-left: 1em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+
+}
+
+.nav-link{
+
+	transition: 0.3s ease;
+
+}
+
+.nav-link:hover{
+
+	color: white;
+
+}
+
+.hamburger{
+
+	display: none;
+	cursor: pointer;
+
+}
+
+.bar{
+
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white;
+
+}
+
+.usr, .crt{
+
+	width: 3em;
+	align-self: center;
+
+}
+
+@media(max-width: 768px){
+
+	.hamburger{
+
+		display: block;
+
+	}
+
+	.hamburger.active .bar:nth-child(2){
+		opacity: 0;
+
+	}
+.hamburger.active .bar:nth-child(1){
+		transform: translateY(8px) 	rotate(45deg);
+
+	}
+
+	.hamburger.active .bar:nth-child(3){
+		transform: translateY(-8px) 	rotate(-45deg);
+
+	}
+
+.nav-menu{
+
+	position: fixed;
+	left: -100%;
+	top: 4em;
+	gap: 3em;
+	flex-direction: column-reverse;
+	background-color: #a2c3a4;
+	width: 100%;
+	text-align: center;
+	transition: 0.3s;
+	padding-bottom: 1em;
+	padding-top: 1em ;
+	z-index: 99;
+}
+
+.nav-item{
+
+	margin: 16px 0;
+
+}
+
+.nav-menu.active{
+
+	left: 0;
+
+}
+}
+
+.sb{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+}
+
+.sbr{
+
+	width: 30em;
+	align-self: center;
+	border-radius: 20px;
+	font-size: 18px;
+	margin: 1em;
+
+}
+
+.sbr{
+     
+     padding:15px;
+     border-radius: 20px;
+   }
+ 
+   input[type=text] {
+      width: 50%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+ 
+.offr{
+
+	flex-direction: row;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	gap: 5em;
+	margin-left: 1em;
+	margin-right: 1em;
+
+}
+
+.p1, .p2, .p3{
+
+	width: 10em;
+	text-align: center;
+	align-self: center;
+
+}
+
+.p41{
+
+	width: 10em;
+	text-align: center;
+	align-self: center;
+	margin-bottom: 1em;
+	margin-top: 1em;
+
+}
+
+.prd2 { 
+
+	width: 13em;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	row-gap: 0.5em;
+}
+
+
+.pr1, .pr2, .pr3{
+
+	width: 13em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+
+
+}
+
+.prop{
+
+	align-self: center;
+	display: flex;
+
+}
+
+.sale{
+
+	width: 45em;
+	align-self: center;
+
+}
+
+.old, .new, .disc{
+
+	text-align: center;
+
+}
+
+.old{
+
+	text-decoration: line-through;
+	color: dimgray;
+
+}
+
+.new{
+
+	font-size: 20px;
+	color: darkred;
+
+}
+
+.disc{
+
+	font-size: 20px;
+	color: red;
+
+}
+
+.cattitl{
+
+	font-family: 'Chakra Petch', sans-serif;
+
+}
+
+a{
+
+	color: black;
+	text-decoration: none;
+
+}
+
+.rw1, .rw2{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-justify: center;
+	margin-bottom: 10em;
+	justify-content: center;
+	column-gap: 15em;
+	text-align: center;
+
+
+}
+
+.mon, .hph, .twr, .hdd, .ram, .gc{
+
+	width: 7rem
+
+}
+
+.ct1:hover, .ct2:hover, .ct3:hover, .ct4:hover, .ct5:hover, .ct6:hover{
+
+	transition: 0.3s;
+	transform: scale(1.1);
+	border: solid, yellow;
+	border-radius: 20px;
+	box-shadow: 5px 5px black;
+	background-color: #a2c3a4;
+	padding: 1em;
+
+
+}
+
+.prd:hover{
+
+	transition: 0.3s;
+	transform: scale(1.1);
+
+}
+
+hr{
+
+	height: 0.1em;
+
+}
+
+.details{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	gap: 8em;
+	text-align: center;
+
+
+}
+
+.buy, .ship, .pay{
+
+	width: 13em;
+
+}
+
+.shipp{
+
+	border-left: solid;
+	border-right: solid;
+	padding-left: 5em;
+	padding-right: 5em;
+
+}
+
+
+
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footerContainer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footerRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footerColumn {
+    width: 25%;
+    padding: 0 25px;
+}
+
+.footerColumn h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footerColumn h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #aedddd;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footerColumn ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footerColumn ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: 0.3s all ease;
+}
+
+.footerColumn ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footerColumn .redes-sociales a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footerColumn .redes-sociales a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*la parte responsivilistica como dice el profe*/
+@media(max-width: 767px) {
+    .footerColumn {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footerColumn {
+        width: 100%;
+    }
+}
+
+/*Responsive pagina en general*/
+
+@media(min-width: 768px) and (max-width: 1326px){
+
+*{
+
+	margin: 0;
+
+
+}
+
+.navbar{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: #a2c3a4;
+	max-width: 100%;
+
+	
+
+}
+
+.hlogo{
+
+	width: 15em;
+	height: 3.5em;
+	margin-left: 1em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+
+}
+
+.nblinks{
+
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: right;
+	width: 100%;
+	gap: 3rem;
+	margin-right: 1em;
+
+
+}
+
+.hlink{
+
+	align-self: center;
+
+	
+}
+
+.uc{
+
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	margin-left: 2em;
+	gap: 2em;
+	max-width: 15%;
+	margin-right: 2em;
+
+}
+
+.usr, .crt{
+
+	width: 3em;
+	align-self: center;
+
+}
+
+.sb{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+}
+
+.sbr{
+
+	align-self: center;
+	border-radius: 20px;
+	font-size: 18px;
+	margin: 1em;
+
+}
+
+.sbr{
+     
+     padding:15px;
+     border-radius: 20px;
+   }
+ 
+   input[type=text] {
+      width: 70%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+ 
+.offr{
+
+	flex-direction: column;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	gap: 0;
+	margin: 0;
+
+
+}
+
+.p1, .p2, .p3{
+
+	width: 10em;
+	text-align: center;
+	align-self: center;
+
+}
+
+.p41{
+
+	width: 10em;
+	text-align: center;
+	align-self: center;
+	margin-bottom: 1em;
+	margin-top: 1em;
+
+}
+
+.prd2 { 
+
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-self: center;
+	text-align: center;
+	column-gap: 2em;
+	padding: 1em;
+}
+
+.pr1, .pr2, .pr3{
+
+	width: 13em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+
+}
+
+.prop{
+
+	align-self: center;
+	display: flex;
+
+}
+
+.sale{
+
+	width: 40em;
+	align-self: center;
+	justify-content: flex-start;
+	display: flex;
+
+
+}
+
+.old, .new, .disc{
+
+	text-align: center;
+
+}
+
+.old{
+
+	text-decoration: line-through;
+	color: dimgray;
+
+}
+
+.new{
+
+	font-size: 20px;
+	color: darkred;
+
+}
+
+.disc{
+
+	font-size: 20px;
+	color: red;
+
+}
+
+.cattitl{
+
+	font-family: 'Chakra Petch', sans-serif;
+
+}
+
+a{
+
+	color: black;
+	text-decoration: none;
+
+}
+
+.rw1, .rw2{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-justify: center;
+	margin-bottom: 10em;
+	justify-content: center;
+	column-gap: 8em;
+	text-align: center;
+
+
+}
+
+.mon, .hph, .twr, .hdd, .ram, .gc{
+
+	width: 7rem
+
+}
+
+.ct1:hover, .ct2:hover, .ct3:hover, .ct4:hover, .ct5:hover, .ct6:hover{
+
+	transition: 0.3s;
+	transform: scale(1.1);
+	border: solid, yellow;
+	border-radius: 20px;
+	box-shadow: 5px 5px black;
+	background-color: #a2c3a4;
+	padding: 1em;
+
+
+}
+
+.prd:hover{
+
+	transition: 0.3s;
+	transform: scale(1.1);
+
+}
+
+hr{
+
+	height: 0.1em;
+
+}
+
+.details{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	gap: 3em;
+	text-align: center;
+
+
+}
+
+.buy, .ship, .pay{
+
+	width: 5em;
+
+}
+
+.shipp{
+
+	border-left: solid;
+	border-right: solid;
+	padding-left: 2em;
+	padding-right: 2em;
+
+}
+
+
+
+}
+
+@media(max-width: 767px) {
+    
+*{
+
+	margin: 0;
+
+
+}
+
+.navbar{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #a2c3a4;
+	max-width: 100%;
+
+	
+
+}
+
+.hlogo{
+
+	width: 15em;
+	height: 3.5em;
+	margin-left: 1em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+
+}
+
+.nblinks{
+
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: right;
+	width: 100%;
+	gap: 0rem;
+	margin-right: 1em;
+
+
+}
+
+.hlink{
+
+	align-self: center;
+
+	
+}
+
+.uc{
+
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	margin-left: 2em;
+	gap: 2em;
+	max-width: 15%;
+	margin-right: 2em;
+
+}
+
+.usr, .crt{
+
+	width: 3em;
+	align-self: center;
+
+}
+
+.sb{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+}
+
+.sbr{
+
+	align-self: center;
+	border-radius: 20px;
+	font-size: 18px;
+	margin: 1em;
+
+}
+
+.sbr{
+     
+     padding:15px;
+     border-radius: 20px;
+   }
+ 
+   input[type=text] {
+      width: 70%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+ 
+.offr{
+
+	flex-direction: column;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	gap: 0;
+	margin: 0;
+
+
+}
+
+.p1, .p2, .p3{
+
+	width: 15em;
+	text-align: center;
+	align-self: center;
+
+}
+
+.p41{
+
+	width: 15em;
+	text-align: center;
+	align-self: center;
+	margin-bottom: 1em;
+	margin-top: 1em;
+
+}
+
+.prd2 { 
+
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-self: center;
+	text-align: center;
+	column-gap: 2em;
+	padding: 1em;
+}
+
+.pr1, .pr2, .pr3{
+
+	width: 15em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+
+}
+
+.prop{
+
+	align-self: center;
+	display: flex;
+
+}
+
+.sale{
+
+	width: 100%;
+	align-self: center;
+	justify-content: flex-start;
+	display: flex;
+
+
+}
+
+.old, .new, .disc{
+
+	text-align: center;
+
+}
+
+.old{
+
+	text-decoration: line-through;
+	color: dimgray;
+
+}
+
+.new{
+
+	font-size: 20px;
+	color: darkred;
+
+}
+
+.disc{
+
+	font-size: 20px;
+	color: red;
+
+}
+
+.cattitl{
+
+	font-family: 'Chakra Petch', sans-serif;
+
+}
+
+a{
+
+	color: black;
+	text-decoration: none;
+
+}
+
+.rw1, .rw2{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-justify: center;
+	margin-bottom: 4em;
+	justify-content: center;
+	column-gap: 2em;
+	text-align: center;
+
+
+}
+
+.ct1,.ct2,.ct3,.ct4, .ct5, .ct6{
+
+	width: 6em;
+	word-wrap: break-word;
+
+}
+
+.mon, .hph, .twr, .hdd, .ram, .gc{
+
+	width: 5em
+
+}
+
+.ct1:hover, .ct2:hover, .ct3:hover, .ct4:hover, .ct5:hover, .ct6:hover{
+
+	transition: 0.3s;
+	transform: scale(1.1);
+	border: solid, yellow;
+	border-radius: 20px;
+	box-shadow: 5px 5px black;
+	background-color: #a2c3a4;
+	padding: 1em;
+
+
+}
+
+.prd:hover{
+
+	transition: 0.3s;
+	transform: scale(1.1);
+
+}
+
+hr{
+
+	height: 0.1em;
+
+}
+
+.details{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	gap: 0;
+	text-align: center;
+
+
+}
+
+.buy, .ship, .pay{
+
+	width: 5em;
+
+}
+
+.shipp{
+
+	border-left: solid;
+	border-right: solid;
+	padding-left: 1em;
+	padding-right: 1em;
+
+}
+
+
+}

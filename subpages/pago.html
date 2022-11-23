@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/pago.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets\cssmp.css">
+
+</head>
+<body>
+
+    <header>
+        
+        <nav class="navbar">
+            
+            <a href="..\index.html"><img src="resources\logo.png" class="nav-branding"></a>
+            
+            <ul class="nav-menu">
+
+            <li>
+                
+                <a href="..\index.html" class="nav-link">Inicio</a>
+
+            </li>
+
+            <li>
+                
+                <a href="..\index.html#monitor" class="nav-link">Productos</a>
+
+            </li>
+
+            <li>
+                
+                <a href="..\index.html#us" class="nav-link">Nosotros</a>
+
+            </li>
+
+            <li>
+                
+                <a href="cart.html" class="nav-link"><img src="resources\cart.png" class="crt"> </a>
+
+            </li>
+
+            <li>
+                
+                <a href="user.html" class="nav-link"><img src="resources\ico.png" class="usr"></a>
+
+            </li>
+
+            </ul>
+
+            <div class="hamburger">
+                
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <script src="navbar.js"></script>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Contacto</h3>
+
+                <div class="inputBox">
+                    <span>Nombre Completo :</span>
+                    <input type="text" placeholder="Pedrito Gonzales">
+                </div>
+                <div class="inputBox">
+                    <span>Correo :</span>
+                    <input type="email" placeholder="ejemplo123@ejemplo.com">
+                </div>
+                <div class="inputBox">
+                    <span>Direccion :</span>
+                    <input type="text" placeholder="casa - calle - localidad">
+                </div>
+                <div class="inputBox">
+                    <span>ciudad :</span>
+                    <input type="text" placeholder="aregua">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>pais :</span>
+                        <input type="text" placeholder="paraguay">
+                    </div>
+                    <div class="inputBox">
+                        <span>codigo postal :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">pago</h3>
+
+                <div class="inputBox">
+                    <span>tarjetas validas :</span>
+                    <img src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>nombre en la tarjeta :</span>
+                    <input type="text" placeholder="mr. john deo">
+                </div>
+                <div class="inputBox">
+                    <span>numero de tarjeta :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp mes :</span>
+                    <input type="text" placeholder="enero">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp año :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input value="Realizar compra" class="submit-btn" onclick="openPopup()">
+        <div class="popup" id="popup">
+            <img src="images/check.png">
+            <h2>Muchas Gracias</h2>
+            <p>Tu compra ha sido realizada exitosamente</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </form>
+
+</div>    
+
+<footer class="footer">
+    <div class="footerContainer">
+        <div class="footerRow">
+
+            <div class="footerColumn">
+                <h4>compañia</h4>
+                <ul>
+                    <li><a href="#">sobre nosotros</a></li>
+                    <li><a href="#">servicios</a></li>
+                    <li><a href="#">politica de privacidad</a></li>
+                    <li><a href="#">afiliados</a></li>
+                </ul>
+            </div>
+
+            <div class="footerColumn">
+                <h4>ayuda</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">arribos</a></li>
+                    <li><a href="#">devoluciones</a></li>
+                    <li><a href="#">ordenar estado</a></li>
+                    <li><a href="#">opciones de pago</a></li>
+                </ul>
+            </div>
+
+            <div class="footerColumn">
+                <h4>compra online</h4>
+                <ul>
+                    <li><a href="#">ratones</a></li>
+                    <li><a href="#">auriculares</a></li>
+                    <li><a href="#">teclados</a></li>
+                    <li><a href="#">graficas</a></li>
+                </ul>
+            </div>
+
+            <div class="footerColumn">
+                <h4>siguenos</h4>
+                <div class="redes-sociales">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+
+    </script>
+
+</body>
+</html>
